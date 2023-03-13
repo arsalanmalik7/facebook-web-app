@@ -1,13 +1,17 @@
 nav {
     display: flex;
     background-color: white;
-    box-shadow: 0px 3px 5px #f0f2f5;
+    box-shadow: 0px 2px 3px #c8c9ca;
     padding-left: 1rem;
     width: 100%;
     height: 4rem;
-    position: absolute;
-    top: 0px;
-    
+    justify-content: space-between;
+
+}
+
+#page {
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo {
@@ -18,6 +22,7 @@ nav {
 #logo {
     color: #3578e5;
     font-size: 2.5rem;
+    cursor: pointer;
 }
 
 #searchBox {
@@ -33,13 +38,13 @@ nav {
 
 }
 
-ul {
+nav ul {
     list-style: none;
     display: flex;
     margin-left: 2rem;
 }
 
-ul li a {
+nav ul li a {
     padding-left: 3rem;
     padding-right: 3rem;
     font-size: 1.5rem;
@@ -49,27 +54,27 @@ ul li a {
 
 }
 
-ul li {
+nav ul li {
     margin-top: 0.8rem;
 }
 
-ul li a:hover {
+nav ul li a:hover {
     background-color: #f0f2f5;
     cursor: pointer;
     transition: 0.2s;
     border-radius: 1rem;
 }
 
-ul li a {
+nav ul li a {
     color: #65676b;
 }
 
-#second {
+nav #second {
     margin-left: auto;
     margin-right: 1.3rem;
 }
 
-#second li a {
+nav #second li a {
     padding-left: 0.8rem;
     padding-right: 0.8rem;
     border-radius: 100%;
@@ -77,18 +82,98 @@ ul li a {
     margin-left: 0.4rem;
 }
 
-#second li a:hover {
+nav #second li a:hover {
     background-color: #d0d1d3;
 }
 
-#second li img {
+nav #second li img {
     border-radius: 100%;
     width: 3.3rem;
     margin-left: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
-#second li img:hover {
+nav #second li img:hover {
     cursor: pointer;
     background-color: #f0f2f5;
+}
+
+#left-sidebar {
+    width: 300px;
+    height: 550px;
+    overflow-y: scroll;
+    position: relative;
+    left: -1rem;
+    scrollbar-width: thin;
+}
+
+#left-sidebar ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    border-bottom: 1px solid #c8c9ca;
+    padding-bottom: 10px;
+}
+
+#left-sidebar ul li {
+    color: #414244;
+    font-weight: 600;
+    list-style: none;
+    padding: 0.5rem;
+}
+
+#left-sidebar ul li:hover {
+    background-color: #d5d7da;
+    transition: 0.1s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#left-sidebar ul li img {
+    width: 2rem;
+    border-radius: 100%;
+}
+
+#sidebar li i {
+    font-size: x-large;
+    color: rgb(31, 61, 196);
+}
+
+#shortcut {
+    text-align: start;
+    color: #78787a;
+    padding: 1rem;
+    margin-left: 10px;
+}
+
+#top-card {
+    display: flex;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 1rem;
+    width: 450px;
+    justify-content: space-around;
+    position: relative;
+    right: 3rem;
+    border-bottom: 1px solid #d5d7da;
+
+}
+
+#top-card h5 {
+    padding: 1rem;
+    color: #65676b;
+    padding-top: 1rem;
+    margin-top: 0.5rem;
+
+}
+
+#top-card h5 i {
+    padding-top: 10px;
+    padding: 2rem;
+}
+
+#top-card h5:hover {
+    background-color: #f0f2f5;
+    cursor: pointer;
+    border-radius: 10px;
 }
